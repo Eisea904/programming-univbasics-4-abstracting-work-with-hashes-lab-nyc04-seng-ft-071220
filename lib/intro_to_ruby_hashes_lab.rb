@@ -15,6 +15,7 @@ def update_counting_hash(hash, key)
   # if the provided key is present, increment its value by 1
   hash[key]
   if hash[key]
+    binding.pry 
     hash[key] += 1
   else
     hash[key] = 1
